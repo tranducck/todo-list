@@ -1,7 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'nuxt-news-no-purgecss',
+    title: 'Todo List @tranducck',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,9 +20,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-    // 'nuxt-purgecss'
-  ],
+  buildModules: ['nuxt-purgecss'],
 
   purgeCSS: {
     paths: [
