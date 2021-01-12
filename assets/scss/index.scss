@@ -1,0 +1,45 @@
+@import 'bulma';
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.todo__card {
+  min-width: 300px;
+  text-align: center;
+}
+
+.todo__item {
+  padding: 0.5rem 1rem;
+  border: 1px solid $grey-light;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  cursor: move;
+  background-color: $white;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.ghost {
+    background-color: $white-bis;
+  }
+
+  &.empty {
+    border-color: transparent;
+    border-width: 2px;
+    color: transparent;
+  }
+
+  &.dropzone {
+    border: 2px dashed $grey-lighter;
+    color: $grey-lighter;
+    cursor: auto;
+  }
+}
+
+.flip-list-move {
+  transition: transform 0.5s;
+}
